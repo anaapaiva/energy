@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+        <link rel="icon" href="logo.jpg" type="icon" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastro da Energyfit</h1>
+      <p class="subtitle">
+        Crie agora sua conta para comprar ou vender as melhores roupas fitness
+        do mercado.
+      </p>
+      <form id="cadastroForm">
+        <input type="text" id="nome" placeholder="Nome completo" required />
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="senha" placeholder="Senha" required />
+        <button type="submit">Cadastrar-se</button>
+      </form>
+      <button type="button" class="site" onclick="window.location.href='energy.html'">
+        Voltar ao site
+      </button>
+      <p id="mensagem" class="mensagem"></p>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

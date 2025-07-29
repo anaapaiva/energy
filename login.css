@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: url(fundo.energy.jpg);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #f9f8f8;
+  padding: 30px;
+  border-radius: 10px;
+  border: 3px solid #000000;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #050505;
+}
+
+.subtitle {
+  color: #706969;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #050505;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #b90e1c;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 5px; /* espaçamento de 5px abaixo deste botão */
+}
+
+form button[type="submit"]:hover {
+  background-color: #c5303a;
+}
+
+.site {
+  width: 100%;
+  background-color: #000; /* preto */
+  color: #fff; /* branco */
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+.mensagem {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  margin-top: 15px;
+  color: #0c720f;
+  font-weight: bold;
+}
