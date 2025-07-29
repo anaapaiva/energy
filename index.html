@@ -1,10 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <title>Minha Página ENERGY</title>
-</head>
-<body>
-  <h1>Está funcionando!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description" content="Loja de moda fitness EnergyFit - leggings, tops, acessórios e muito mais."/>
+    <title>EnergyFit - A sua Loja Fitness</title>
+    <link rel="stylesheet" href="energy.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="icon" href="logo.jpg" type="icon" />
+  </head>
+  <body>
+    <header>
+      <h1>EnergyFit</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li>
+            <a href="compras.html">🛒 <span id="contador-carrinho"></span></a>
+          </li>
+          <li class="login">
+            <a href="login.html">Login</a>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="carrossel">
+  <div class="carrossel-container">
+    <div class="slide ativo"></div>
+    <img src="imgs/banner1.webp" class="slide ativo" alt="Banner 1">
+    <img src="imgs/banner2.webp" class="slide" alt="Banner 2">
+    <img src="imgs/banner3.webp" class="slide" alt="Banner 3">
+    <img src="imgs/banner4.webp" class="slide" alt="Banner 4">
+    <button class="btn anterior" onclick="mudarSlide(-1)">&#10094;</button>
+    <button class="btn proximo" onclick="mudarSlide(1)">&#10095;</button>
+  </div>
+</section>
+
+      <section id="produtos">
+        <h2>Produtos em Destaque</h2>
+        <div class="produtos">
+          <article class="produto">
+            <img src="legging-azul.webp" alt="Legging Fitness Azul" />
+            <h3>Legging Fitness Azul</h3>
+            <button
+              class="add-to-cart"
+              data-nome="Legging Azul"
+              data-preco="99.90"
+            >
+              Adicionar ao carrinho
+            </button>
+          </article>
+          <article class="produto">
+            <img src="top-black.webp" alt="Top Fitness Preto" />
+            <h3>Top Fitness Preto</h3>
+            <button
+              class="add-to-cart"
+              data-nome="Top Preto"
+              data-preco="79.90"
+            >
+              Adicionar ao carrinho
+            </button>
+          </article>
+          <article class="produto">
+            <img src="jaqueta.webp" alt="Jaqueta Fitness" />
+            <h3>Jaqueta Fitness</h3>
+            <button class="add-to-cart" data-nome="Jaqueta" data-preco="129.90">
+              Adicionar ao carrinho
+            </button>
+          </article>
+        </div>
+      </section>
+    </main>
+   
+
+    <footer>
+      <p>
+        <a href="https://www.instagram.com/energyfit_site"
+          ><img src="logo.ig.jpeg" alt="Instagram" width="25" height="27"
+        /></a>
+        <a href="https://wa.me/5537988275969"
+          ><img src="logo.wt.png" alt="WhatsApp" width="25" height="27"
+        /></a>
+        <a href="mailto:energyfit2025@gmail.com"
+          ><img src="logo.gmail.png" alt="Gmail" width="25" height="27"
+        /></a>
+      </p>
+      <p>
+        <a href="politica.html">Política de Privacidade</a> |
+        <a href="termos.html">Termos de Uso</a> |
+        <a href="suporte.html">Suporte</a>
+      </p>
+      <p>EnergyFit © 2025 - Todos os direitos reservados</p>
+    </footer>
+
+    <div id="cookie-alert" class="cookie-alert">
+      <p>🍪 Este site utiliza cookies para oferecer a melhor experiência.</p>
+      <div class="cookie-buttons">
+        <button id="accept-cookies">Aceitar</button>
+        <button id="reject-cookies">Recusar</button>
+      </div>
+    </div>
+     <script src="carrossel.js"></script>
+
+    <script src="localStorage.js"></script>
+  </body>
 </html>
