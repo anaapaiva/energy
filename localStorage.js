@@ -41,16 +41,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function filtrarProdutos(categoria) {
-  const produtos = document.querySelectorAll(".produto");
-
-  produtos.forEach((produto) => {
-    const categoriaProduto = produto.getAttribute("data-categoria");
-
-    if (categoria === "todos" || categoriaProduto === categoria) {
-      produto.style.display = "block";
-    } else {
-      produto.style.display = "none";
-    }
-  });
-}
